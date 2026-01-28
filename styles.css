@@ -57,20 +57,22 @@
    - Set the color to var(--muted) and the font size to 0.95rem for the .color-demo .muted class.
    - Style the .bg-sample class: Make the width of 100%, set a minimum height of 80px, add padding 0.75 rem and margin-block 0.75 rem, round the corners using border-radius (how much roundess), set the text color to white, and apply a 135-degree linear gradient background starting from the brand color and ending with a green tone like linear-gradient(135deg, var(--brand), #22c55e).
 */
-.color-demo, .color-note{
- color: var(--brand);
+.color-demo .color-note {
+  color: var(--brand);
   font-weight: bold;
 }
-.color-demo .muted{
+
+.color-demo .muted {
   color: var(--muted);
   font-size: 0.95rem;
 }
-.bg-sample{
+
+.bg-sample {
   width: 100%;
   min-height: 80px;
   padding: 0.75rem;
-  margin-block: o.75rem;
-  border-radius: 0.5rem;
+  margin-block: 0.75rem;
+  border-radius: 10px;
   color: white;
   background: linear-gradient(135deg, var(--brand), #22c55e);
 }
@@ -92,14 +94,15 @@
      and apply text-transform: capitalize.
    - For the .copy .intro class: set the font-style to italic and slightly increase the line-height and set the top margin of 0.25 rem.
 */
-.copy .little{
+.copy .title {
   font-size: 1.5rem;
-  font-weight: 650;
+  font-weight: 700;
   text-transform: capitalize;
 }
-.copy .intro{
+
+.copy .intro {
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.7;
   margin-top: 0.25rem;
 }
 
@@ -153,7 +156,6 @@
   background: rgba(0,0,0,0.05);
   margin-bottom: 0.5rem;
 }
-
 
 /* Base CSS (already provided for you).*/
 
